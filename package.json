@@ -29,6 +29,7 @@
   "dependencies": {
     "ejs": "^2.6.2",
     "express": "^4.17.1",
+    "lodash": "^4.17.15",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
