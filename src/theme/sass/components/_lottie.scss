@@ -1,0 +1,74 @@
+.hero__animation {
+    display: flex;
+    width: 100%;
+    flex-grow:0;
+    flex-shrink:0;
+    position:relative;
+
+    @media only screen and (max-width: 480px){
+		//height:80%;
+    }
+    
+    @media only screen and (max-width: 1024px){
+		height:100%;
+    }
+    
+    #black-section {
+        width:62%;
+        height:100%;
+        background-color:black;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        transform-origin:top left;
+        animation-name: none;
+        animation-duration: 1s;
+        animation-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+        animation-fill-mode: forwards;
+
+        @media only screen and (max-width: 1024px){
+            width:80%;
+        }
+    }
+    #black-section.reveal {
+        animation-name: reveal;
+    }
+    #blue-section {
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:2;
+        background-image: url('../images/hero-blue-section.svg');
+        background-size:cover;
+        background-position:51.6% center;
+        background-repeat:no-repeat;
+
+        @media only screen and (min-width: 1280px){
+            background-position:center;
+            background-size:contain;
+        }
+    }
+    
+    #hero__lottie {
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        margin:0 auto;
+        max-width: 1280px;
+        max-width: 980px;
+        position:relative;
+
+        & > svg {
+            position:relative;
+            z-index: 3;
+        }
+    }
+}
+
+@keyframes reveal {
+    0% { transform: scale3d(1,0,1) }
+    100% { transform: scale3d(1,1,1) }
+}

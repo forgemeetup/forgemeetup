@@ -1,0 +1,10 @@
+.landing__section:nth-child(odd){
+	background-color: $background-alt;
+	border-top: 1px solid $line;
+	border-bottom: 1px solid $line;
+}
+
+.landing__section--image{
+	//float: right;
+	//margin: -95px;
+}

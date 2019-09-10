@@ -1,0 +1,85 @@
+// Colors
+$primary: #000000;
+$secondary: #01c3a7;
+$accent: #ff585f;
+$primary-dark: darken($primary,5%);
+$secondary-dark: darken($secondary,8%);
+$accent-dark: darken($accent,8%);
+$text: #666;
+$text-dark: #111;
+$background: #ffffff;
+$background-alt: #f7f7f7;
+$background-dark: #333C44;
+$line: #eee;
+$success: $accent;
+$error: tomato;
+
+// Font face
+$fontUrl: '//static.trainlinecontent.com/content/WEB/fonts/tl-circular-1.0.1';
+
+@font-face {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$fontUrl}/TLCircular-Book.woff2') format('woff2'),
+       url('#{$fontUrl}//TLCircular-Book.woff') format('woff'),
+       url('#{$fontUrl}//TLCircular-Book.ttf') format('truetype'), 
+       url('#{$fontUrl}//TLCircular-Book.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: bold;
+  src: url('#{$fontUrl}//TLCircular-Bold.woff2') format('woff2'),
+       url('#{$fontUrl}//TLCircular-Bold.woff') format('woff'),
+       url('#{$fontUrl}//TLCircular-Bold.ttf') format('truetype'),
+       url('#{$fontUrl}//TLCircular-Bold.eot') format('embedded-opentype');
+}
+
+// Typography
+$font: "Circular","Circular Std","TLCircular", Helvetica, Arial, sans-serif;
+$font-size: 15px;
+$font-size-large: $font-size + 3px;
+$line-height: 1.7;
+$light: 300;
+$normal: 400;
+$bold: 700;
+
+// Other variables
+$radius: 30px;
+$speed: 120ms;
+
+// Spacers
+$sp-xxxxl: 80px;
+$sp-xxxl: 64px;
+$sp-xxl: 48px;
+$sp-xl: 32px;
+$sp-l: 24px;
+$sp-m: 16px;
+$sp-s: 8px;
+$sp-xs: 4px;
+$sp-xxs: 2px;
+
+// Containers
+$containerWidth: 88%; // Percentage of screen width
+$containerMax: 1080px; // Largest fixed width
+$text-container: 640px; // Limit texts for readability
+
+// Media queries
+$tablet-width: 600px !default; // Tablets
+$desktop-width: 992px !default; // Desktops & Laptops
+$huge-width: 1400px !default; // Large Desktops
+
+/* Components */
+
+// Navigation bar
+$navbar-height: 60px; // Height for navigation globally
+$navbar-height-extended: 70px; // Extended height for navigation => Used on landing
+
+// Hero
+$hero-color: $background;
+$hero-shadow: 0 4px 11px rgba(124,146,169,0.5);
+$hero-color-opacity: 0.96;
+$hero-mask-opacity: 0.66;
+$hero-down-size: 1rem;

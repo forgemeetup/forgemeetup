@@ -1,0 +1,149 @@
+.expanded{
+	position: relative;
+
+	.container {
+		position: initial;
+		width:auto;
+
+		@include desktop{
+			width: $containerWidth;
+		}
+	}
+}
+
+.expanded__inner{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	@include desktop{
+		flex-direction: row;
+	}
+}
+
+.expanded__media{
+	order: 1;
+	text-align: center;
+	overflow: hidden;
+
+	//min-height:460px;
+	//background:$line;
+
+	img {
+		display:block;
+		width:100%;
+		max-width:initial;
+		max-height:320px;
+		object-fit:cover;
+	}
+
+	@include desktop{
+		width: 50%;
+		flex-shrink: 0;
+		order: unset;
+		overflow: initial;
+
+		img{
+			height:100%;
+			//border-radius: 0 320px 320px 0;
+			width:calc(100vw / 2);
+			max-height:initial;
+			position: absolute;
+			left:0;
+		}
+
+	}
+
+}
+
+.expanded__content{
+	display:flex;
+	width:$containerWidth;
+	max-width: $text-container;
+	flex-direction:column;
+	justify-content:center;
+	align-items:flex-start;
+	order: 2;
+	padding-top:$sp-xxl;
+	padding-bottom:$sp-xxl;
+	margin:0 auto;
+
+	@include desktop{
+		//padding: 0 16pt;
+		width: 50%;
+		flex-shrink: 0;
+		order: unset;
+		margin:0;
+
+		padding-top:$sp-xxl * 2;
+		padding-bottom:$sp-xxl * 2;
+		padding-left:$sp-xxl * 2;
+	}
+	.button {
+		margin-bottom:0;
+	}
+}
+
+.expanded:nth-child(odd){
+	.expanded__media{
+		order: 1;
+		position: relative;
+
+		@include desktop{
+			order: 1;
+		}
+
+		img {
+			//border-radius: 320px 0 0 320px;
+		}
+	}
+	.expanded__content{
+		@include desktop{
+			padding-right:$sp-xxl * 2;
+			padding-left:0;
+		}
+	}
+}
+
+.rows {
+	padding-top: $sp-xl;
+}
+
+.rows .expanded:last-child{
+	padding-bottom:$sp-xxl;
+
+	@include desktop{
+		padding-bottom:0;
+	}
+}
+
+/* Actual content */
+.expanded__image{
+	width: 90%;
+	max-width: 220px;
+	padding: 16pt 0;
+
+	@include desktop{
+		max-width: 280px;
+	}
+}
+
+.expanded__title{
+	margin-top:0;
+}
+
+.expanded__text{
+	//max-width: 60ch;
+}
+
+#meetups {
+	padding-top: $sp-xxxl;
+
+	h2 {
+		margin-top:0;
+	}
+
+	@include desktop{
+        border-top:1px solid $line;
+	}
+}
