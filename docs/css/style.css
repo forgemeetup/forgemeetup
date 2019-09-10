@@ -888,6 +888,8 @@ select {
   background-repeat: no-repeat;
   color: #ffffff;
   background-color: #4C4FDF; }
+  .-ms- .hero {
+    min-height: 480px; }
   .hero__inner {
     height: 100%;
     position: relative;
@@ -1116,7 +1118,7 @@ select {
       .expanded__media img {
         height: 100%;
         width: calc(100vw / 2);
-        max-height: initial;
+        max-height: none;
         position: absolute;
         left: 0; } }
 
@@ -1132,6 +1134,10 @@ select {
   padding-top: 48px;
   padding-bottom: 48px;
   margin: 0 auto; }
+  .-ms- .expanded__content {
+    display: block;
+    padding-right: 0 !important;
+    padding-left: 96px !important; }
   @media (min-width: 992px) {
     .expanded__content {
       width: 50%;
@@ -1237,12 +1243,10 @@ select {
   -js-display: flex;
   display: flex;
   width: 100%;
+  height: 100%;
   flex-grow: 0;
   flex-shrink: 0;
   position: relative; }
-  @media only screen and (max-width: 1024px) {
-    .hero__animation {
-      height: 100%; } }
   .hero__animation #black-section {
     width: 62%;
     height: 100%;

@@ -1,6 +1,7 @@
 .hero__animation {
     display: flex;
     width: 100%;
+    height:100%;
     flex-grow:0;
     flex-shrink:0;
     position:relative;
@@ -10,7 +11,7 @@
     }
     
     @media only screen and (max-width: 1024px){
-		height:100%;
+		//height:100%;
     }
     
     #black-section {

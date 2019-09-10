@@ -144,6 +144,8 @@ document.addEventListener('DOMContentLoaded',function(){
 		document.body.classList.add("ios");
 	}
 
+
+
 	//hero autoplay debug
 	/*
 	// Replace video poster by video itself

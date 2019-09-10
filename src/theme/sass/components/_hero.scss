@@ -13,6 +13,9 @@
 	.ios & {
 		//background-color:#222023;
 	}
+	.-ms- & {
+		min-height: 480px;
+	}
 	&__inner{
 		height:100%;
 		position: relative;

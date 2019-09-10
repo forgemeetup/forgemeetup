@@ -37,6 +37,8 @@
 		object-fit:cover;
 	}
 
+	
+
 	@include desktop{
 		width: 50%;
 		flex-shrink: 0;
@@ -47,10 +49,10 @@
 			height:100%;
 			//border-radius: 0 320px 320px 0;
 			width:calc(100vw / 2);
-			max-height:initial;
+			max-height:none;
 			position: absolute;
 			left:0;
-		}
+		}	
 
 	}
 
@@ -67,6 +69,12 @@
 	padding-top:$sp-xxl;
 	padding-bottom:$sp-xxl;
 	margin:0 auto;
+
+	.-ms- & {
+		display:block;
+		padding-right:0 !important;
+		padding-left:$sp-xxl * 2 !important;
+	}
 
 	@include desktop{
 		//padding: 0 16pt;
