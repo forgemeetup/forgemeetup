@@ -480,13 +480,13 @@ button, .button {
       color: #fff; } }
 
 .button__accent {
-  background-color: #ff585f;
-  border-color: #ff585f;
+  background-color: #de3875;
+  border-color: #de3875;
   color: #fff; }
   @media (min-width: 992px) {
     .button__accent:hover {
-      background-color: #ff2f38;
-      border-color: #ff2f38;
+      background-color: #cb2260;
+      border-color: #cb2260;
       color: #fff; } }
 
 .button__delete {
@@ -735,8 +735,8 @@ select {
   height: 18px;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
-  border-right: 2px solid #ff585f;
-  border-bottom: 2px solid #ff585f;
+  border-right: 2px solid #de3875;
+  border-bottom: 2px solid #de3875;
   transform: rotate(40deg);
   backface-visibility: hidden;
   transform-origin: 100% 100%; }
@@ -944,7 +944,7 @@ select {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 2; }
+  z-index: 5; }
 
 /*--- CONTENT STYLING ---*/
 .hero__video {
