@@ -1288,7 +1288,8 @@ select {
     margin: 0 auto;
     max-width: 1280px;
     max-width: 980px;
-    position: relative; }
+    position: relative;
+    width: 100%; }
     .hero__animation #hero__lottie > svg {
       position: relative;
       z-index: 3; }
